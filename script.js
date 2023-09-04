@@ -17,3 +17,7 @@ function multiply(numberA, numberB){
 function divide(numberA, numberB){
     return numberA / numberB
 }
+
+function operate(operator, firstNumber, secondNumber){
+    add(firstNumber, secondNumber);
+}
