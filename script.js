@@ -27,13 +27,16 @@ let buttons = document.querySelectorAll('.toDisplay');
 
 let displayValue = "";
 
-function populateDisplay(){
-    buttons.forEach(item => {
-        item.addEventListener("click", () => {
-            displayValue += item.textContent;
-            display2.firstChild.textContent = displayValue;
-        })
-    });
+buttons.forEach(item => {
+    item.addEventListener("click", () => {
+        displayValue += item.textContent;
+        populateDisplay(displayValue);
+    })
+});
+
+
+function populateDisplay(value){
+    display2.firstChild.textContent = value;
     
 }
-populateDisplay();
+
