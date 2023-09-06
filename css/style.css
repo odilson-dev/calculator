@@ -1,0 +1,70 @@
+@font-face {
+	font-family: poppins;
+	src: url(fonts/poppins/poppins.ttf);
+}
+
+body{
+    background-color: #93A8A2;
+}
+
+.container{
+    border: 1px solid black;
+    width: 370px;
+    margin: 15px auto 0 auto;
+    border-radius: 15px;
+    font-family: poppins;
+}
+
+.display-container{
+    text-align: right;
+    width: 90%;
+    margin: auto;
+}
+
+#display-1{
+    padding-top: 90px;
+    height: 40px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    
+}
+#display-2{
+    color: rgb(110, 110, 110);
+    padding-top: 10px;
+    height: 40px;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0; 
+    
+}
+button{
+    width: 69px;
+    height: 69px;
+    margin: 8px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 3px 3px 8px rgb(18, 18, 18);
+    font-family: poppins;
+}
+
+#button-0{
+    width: 160px;
+}
+#equal{
+    background-color: #EF864B;
+}
+.green{
+    background-color: #367B8A;
+}
+.green2{
+    background-color: #262D37;
+}

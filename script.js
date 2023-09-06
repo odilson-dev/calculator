@@ -7,7 +7,7 @@ let isDecimal = false;
 
 let equal = document.querySelector("#equal");
 
-let operatorValue;
+let operatorValue = "";
 
 let isOperatorClicked = false;
 
@@ -67,6 +67,7 @@ buttons.forEach(item => {
             secondNumberStr += item.textContent;
             secondNumber = parseFloat(secondNumberStr);
             resultSaved = operate();
+            // display1.firstChild.textContent = resultSaved;
         }
     })
 });
@@ -91,6 +92,8 @@ function operate(){
         case "+":
             result = add(firstNumber, secondNumber);
             break;
+        case "":
+            result = firstNumber;
     }
     return result;
 }
