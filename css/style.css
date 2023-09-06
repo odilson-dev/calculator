@@ -5,6 +5,7 @@
 
 body{
     background-color: #93A8A2;
+    font-family: poppins;
 }
 
 .container{
@@ -12,7 +13,6 @@ body{
     width: 370px;
     margin: 15px auto 0 auto;
     border-radius: 15px;
-    font-family: poppins;
 }
 
 .display-container{
@@ -67,4 +67,20 @@ button{
 }
 .green2{
     background-color: #262D37;
+}
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 25px;
+    margin-top: 20px;
+    color: white;
+    background-color: #262D37;
+}
+i{
+    font-size: 30px;
+}
+a{
+    color: white;
 }
