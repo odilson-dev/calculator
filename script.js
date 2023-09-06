@@ -6,6 +6,7 @@ let resultSaved;
 let isDecimal = false;
 
 let equal = document.querySelector("#equal");
+let percent = document.querySelector("#percent");
 
 let operatorValue = "";
 
@@ -74,7 +75,7 @@ buttons.forEach(item => {
 
 
 function populateDisplay(value){
-    display2.firstChild.textContent = value;  
+    display2.textContent = value;  
 }
 
 function operate(){
@@ -112,18 +113,21 @@ operators.forEach(operator => {
             secondNumberStr = "";
         }
     })
-})
+});
 
+percent.addEventListener("click",() => {
+    (!isOperatorClicked) ? firstNumber *= 0.01 : secondNumber *= 0.01;
+});
 
 
 equal.addEventListener("click", () => {
-    display1.firstChild.textContent = operate();
+    display1.textContent = operate();
 
-})
+});
 
 clearButton.addEventListener("click", () => {
-    display1.innerHTML= "<p></p>";
-    display2.innerHTML= "<p></p>";
+    display1.innerHTML= "";
+    display2.innerHTML= "";
     isOperatorClicked = false;
     isDecimal = false;
     displayValue = "";
