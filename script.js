@@ -102,6 +102,7 @@ function operate(){
 operators.forEach(operator => {
     operator.addEventListener("click", () => {
         isOperatorClicked = true;
+        isDecimal = false;
         operatorValue = operator.textContent;
         isOperatorClickedAgain += 1;
         displayValue += ` ${operatorValue} `;
@@ -124,6 +125,7 @@ clearButton.addEventListener("click", () => {
     display1.innerHTML= "<p></p>";
     display2.innerHTML= "<p></p>";
     isOperatorClicked = false;
+    isDecimal = false;
     displayValue = "";
     firstNumberStr = "";
     secondNumberStr = "";
