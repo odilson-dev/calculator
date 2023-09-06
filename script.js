@@ -1,12 +1,12 @@
-let firstNumber;
-let secondNumber;
+let firstNumber = 0;
+let secondNumber = 0;
 let operators = document.querySelectorAll(".operator");
 let isOperatorClickedAgain = 0;
 let resultSaved;
 let isDecimal = false;
-
 let equal = document.querySelector("#equal");
 let percent = document.querySelector("#percent");
+let negativeButton = document.querySelector("#negative");
 
 let operatorValue = "";
 
@@ -48,6 +48,18 @@ let displayValue = "";
 let firstNumberStr = "";
 let secondNumberStr = "";
 
+negativeButton.addEventListener("click", () => {
+    if(!isOperatorClicked){
+        firstNumber *= -1;
+        displayValue = firstNumber
+        populateDisplay(displayValue);
+    } else{
+        secondNumber *= -1
+        displayValue = secondNumber
+    }
+    
+})
+
 buttons.forEach(item => {
     item.addEventListener("click", () => {
         if(item.textContent === "." && isDecimal === false){
@@ -68,7 +80,6 @@ buttons.forEach(item => {
             secondNumberStr += item.textContent;
             secondNumber = parseFloat(secondNumberStr);
             resultSaved = operate();
-            // display1.firstChild.textContent = resultSaved;
         }
     })
 });
