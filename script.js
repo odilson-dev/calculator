@@ -7,6 +7,8 @@ let isDecimal = false;
 let equal = document.querySelector("#equal");
 let percent = document.querySelector("#percent");
 let negativeButton = document.querySelector("#negative");
+let mode = document.querySelector("#mode");
+let container = document.querySelector(".container");
 
 let operatorValue = "";
 
@@ -148,4 +150,20 @@ clearButton.addEventListener("click", () => {
     firstNumber = null;
     secondNumber = null;
     isOperatorClickedAgain = 0;
+});
+
+
+mode.addEventListener("click", () => {
+    if(container.classList.contains("white")){
+        container.classList.remove("white")
+        mode.textContent = "White mode";
+        
+    } else{
+        container.classList.add('white')
+        display1.style.color = "#262D37";
+        mode.textContent = "Dark mode";
+        
+
+    }
+    
 })
