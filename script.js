@@ -154,14 +154,16 @@ clearButton.addEventListener("click", () => {
 
 
 mode.addEventListener("click", () => {
+    display1.style.transitionDuration = "500ms";
     if(container.classList.contains("white")){
         container.classList.remove("white")
-        mode.textContent = "White mode";
+        mode.children[1].textContent = "White mode";
+        display1.style.color = "white";
         
     } else{
         container.classList.add('white')
         display1.style.color = "#262D37";
-        mode.textContent = "Dark mode";
+        mode.children[1].textContent = "Dark mode";
         
 
     }

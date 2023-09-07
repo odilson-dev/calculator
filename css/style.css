@@ -9,9 +9,13 @@ body{
 }
 
 .container{
+    box-shadow: 5px 5px 10px rgb(110, 110, 110);
     width: 370px;
     margin: 15px auto 0 auto;
     border-radius: 15px;
+    background-color: #262D37;
+    padding-bottom: 15px;
+    transition-duration: 500ms
 }
 
 .display-container{
@@ -72,7 +76,7 @@ button{
 footer{
     text-align: center;
     padding: 20px 0 20px 0;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     color: white;
     background-color: #262D37;
@@ -90,8 +94,16 @@ a{
     border-radius: 15px;
     padding: 15px;
     cursor: pointer;
-    display: inline-block;
+    display:  block;
+    width: 125px;
+    margin: auto;
+    transition: 500ms;
+}
+#mode:hover{
+    background-color: #262D37;
+    color: white;
 }
 .white{
     background-color: white;
+    
 }
