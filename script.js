@@ -9,9 +9,14 @@ let percent = document.querySelector("#percent");
 let negativeButton = document.querySelector("#negative");
 let mode = document.querySelector("#mode");
 let container = document.querySelector(".container");
-
+let display1 = document.querySelector("#display-1");
+let display2 = document.querySelector("#display-2");
+let clearButton = document.querySelector("#clear");
+let buttons = document.querySelectorAll('.toDisplay');
+let displayValue = "";
+let firstNumberStr = "";
+let secondNumberStr = "";
 let operatorValue = "";
-
 let isOperatorClicked = false;
 
 function round(value, precision) {
@@ -39,16 +44,6 @@ function divide(numberA, numberB){
     return round(numberA / numberB, 2);
 }
 
-let display1 = document.querySelector("#display-1");
-let display2 = document.querySelector("#display-2");
-
-let clearButton = document.querySelector("#clear");
-
-let buttons = document.querySelectorAll('.toDisplay');
-
-let displayValue = "";
-let firstNumberStr = "";
-let secondNumberStr = "";
 
 negativeButton.addEventListener("click", () => {
     if(!isOperatorClicked){
