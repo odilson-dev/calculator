@@ -108,3 +108,10 @@ a{
     background-color: white;
     
 }
+
+#github-icon{
+    transition-duration: 500ms;
+}
+#github-icon:hover{
+    transform: scale(1.3);
+}
