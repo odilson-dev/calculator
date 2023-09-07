@@ -150,17 +150,21 @@ clearButton.addEventListener("click", () => {
 
 mode.addEventListener("click", () => {
     display1.style.transitionDuration = "500ms";
+    console.log(typeof(mode.children[0].classList));
+    
+    
+    console.log(mode.children[0].classList);
     if(container.classList.contains("white")){
         container.classList.remove("white")
-        mode.children[1].textContent = "White mode";
         display1.style.color = "white";
+        mode.children[0].classList = [];
+        mode.children[0].classList.add("fa-regular", "fa-sun");
         
     } else{
         container.classList.add('white')
         display1.style.color = "#262D37";
-        mode.children[1].textContent = "Dark mode";
-        
-
+        mode.children[0].classList = [];
+        mode.children[0].classList.add("fas", "fa-moon");
     }
     
 })
