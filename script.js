@@ -144,6 +144,7 @@ clearButton.addEventListener("click", () => {
     operatorValue = "";
     firstNumber = null;
     secondNumber = null;
+    resultSaved = 0;
     isOperatorClickedAgain = 0;
 });
 
