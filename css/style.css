@@ -5,6 +5,7 @@
 
 body{
     background-color: #93A8A2;
+    margin: 0;
     font-family: poppins;
 }
 
@@ -77,7 +78,7 @@ button{
 footer{
     text-align: center;
     padding: 20px 0 20px 0;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
     color: white;
     background-color: #262D37;
@@ -119,4 +120,9 @@ a{
 
 #mode i{
     font-size: 50px;
+}
+
+.red-heart {
+    color: red; /* Change the color */
+    font-size: 30px; /* Change the size */
 }
